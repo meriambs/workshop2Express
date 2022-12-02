@@ -1,0 +1,22 @@
+Le routage consiste à déterminer comment une application répond à une demande client à un point de terminaison particulier, 
+qui est un URI (ou chemin) et une méthode de demande HTTP spécifique (GET, POST, etc.).
+
+Chaque itinéraire peut avoir une ou plusieurs fonctions de gestionnaire, qui sont exécutées lorsque l'itinéraire est mis en correspondance.
+
+La définition de route prend la structure suivante :
+
+app.METHOD(PATH, HANDLER)
+
+
+Où:
+
+appest une instance de express.
+METHODest une méthode de requête HTTP , en minuscules.
+PATHest un chemin sur le serveur.
+HANDLERest la fonction exécutée lorsque la route correspond.
+
+
+
+
+req.param(nom [, valeur par défaut])
+ La méthode req.param est utilisée pour récupérer la valeur du nom du paramètre lorsqu'il est présent.
